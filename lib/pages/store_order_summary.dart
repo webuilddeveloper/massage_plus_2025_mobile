@@ -272,9 +272,9 @@ class _OrderSummaryPageState extends State<OrderSummaryPage> {
       child: Theme(
         data: Theme.of(context).copyWith(
           radioTheme: RadioThemeData(
-            fillColor: MaterialStateProperty.resolveWith<Color>(
-              (Set<MaterialState> states) {
-                if (states.contains(MaterialState.selected)) {
+            fillColor: WidgetStateProperty.resolveWith<Color>(
+              (Set<WidgetState> states) {
+                if (states.contains(WidgetState.selected)) {
                   return Theme.of(context).primaryColor;
                 }
                 return Colors.grey;

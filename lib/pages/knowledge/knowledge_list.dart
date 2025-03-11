@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:security_2025_mobile_v3/component/header.dart';
 import 'package:security_2025_mobile_v3/pages/knowledge/knowledge_list_vertical.dart'
     as grid;
-import 'package:security_2025_mobile_v3/component/key_search.dart';
-import 'package:security_2025_mobile_v3/component/tab_category.dart';
-import 'package:security_2025_mobile_v3/shared/api_provider.dart' as service;
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 
 class KnowledgeList extends StatefulWidget {

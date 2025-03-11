@@ -18,7 +18,6 @@ import 'package:security_2025_mobile_v3/pages/my_qr_code.dart';
 import 'package:security_2025_mobile_v3/pages/news/news_form.dart';
 import 'package:security_2025_mobile_v3/pages/reporter/reporter_main.dart';
 import 'package:security_2025_mobile_v3/pages/store_productlist.dart';
-import 'package:security_2025_mobile_v3/pages/training_courses.dart';
 import 'package:security_2025_mobile_v3/pages/warning/warning_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';

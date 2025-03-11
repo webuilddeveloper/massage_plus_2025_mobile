@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:qr_flutter/qr_flutter.dart';
-import 'package:security_2025_mobile_v3/component/material/check_avatar.dart';
-import 'package:security_2025_mobile_v3/pages/my_qr_code.dart';
 import 'package:security_2025_mobile_v3/qr_screen.dart';
 
 class SecurityLicense extends StatefulWidget {

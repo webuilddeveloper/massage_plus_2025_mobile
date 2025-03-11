@@ -151,7 +151,7 @@ class _MenuState extends State<Menu> {
 
   Widget _buildBottomNavBar() {
     return MediaQuery(
-      data: MediaQuery.of(context).copyWith(textScaleFactor: 1.0),
+      data: MediaQuery.of(context).copyWith(textScaler: TextScaler.linear(1.0)),
       child: Container(
         height: 66 + MediaQuery.of(context).padding.bottom,
         decoration: BoxDecoration(
@@ -213,7 +213,6 @@ class _MenuState extends State<Menu> {
     int? index,
     String title, {
     bool isNetwork = false,
-    bool isIconsData = false,
     bool isNoti = false,
     bool isLicense = false,
     String? icon,

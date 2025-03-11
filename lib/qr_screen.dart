@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:qr_flutter/qr_flutter.dart';
-import 'package:security_2025_mobile_v3/component/material/check_avatar.dart';
 
 class QrScreen extends StatefulWidget {
   QrScreen({

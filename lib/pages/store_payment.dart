@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:qr_flutter/qr_flutter.dart';
-import 'package:security_2025_mobile_v3/home.dart';
 
 class PaymentPage extends StatelessWidget {
   final int totalAmount;
