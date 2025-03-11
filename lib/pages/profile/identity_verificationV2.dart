@@ -6,10 +6,10 @@ import 'package:flutter_datetime_picker_plus/flutter_datetime_picker_plus.dart'
     as dt_picker;
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:intl/intl.dart';
-import 'package:security_2025_mobile_v3/component/header.dart';
-import 'package:security_2025_mobile_v3/pages/blank_page/dialog_fail.dart';
-import 'package:security_2025_mobile_v3/shared/api_provider.dart';
-import 'package:security_2025_mobile_v3/widget/text_form_field.dart';
+import 'package:massage_2025_mobile/component/header.dart';
+import 'package:massage_2025_mobile/pages/blank_page/dialog_fail.dart';
+import 'package:massage_2025_mobile/shared/api_provider.dart';
+import 'package:massage_2025_mobile/widget/text_form_field.dart';
 
 class IdentityVerificationPageV2 extends StatefulWidget {
   IdentityVerificationPageV2(

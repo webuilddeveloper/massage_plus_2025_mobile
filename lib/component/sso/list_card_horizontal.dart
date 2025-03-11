@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:security_2025_mobile_v3/models/user.dart';
-import 'package:security_2025_mobile_v3/shared/extension.dart';
+import 'package:massage_2025_mobile/models/user.dart';
+import 'package:massage_2025_mobile/shared/extension.dart';
 
 class SSOListCardHorizontal extends StatefulWidget {
   SSOListCardHorizontal({Key? key, required this.userData}) : super(key: key);
@@ -79,7 +79,7 @@ class _SSOListCardHorizontal extends State<SSOListCardHorizontal> {
         ],
       ),
     );
-    }
+  }
 }
 
 myCard(

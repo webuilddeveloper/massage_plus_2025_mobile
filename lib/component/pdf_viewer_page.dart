@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 // import 'package:flutter_pdfview/flutter_pdfview.dart';
 import 'package:flutter_downloader/flutter_downloader.dart';
-import 'package:security_2025_mobile_v3/shared/api_provider_pdf.dart';
+import 'package:massage_2025_mobile/shared/api_provider_pdf.dart';
 
 class PdfViewerPage extends StatefulWidget {
   PdfViewerPage({Key? key, required this.path}) : super(key: key);

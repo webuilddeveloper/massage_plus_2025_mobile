@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:qr_flutter/qr_flutter.dart';
-import 'package:security_2025_mobile_v3/qr_screen.dart';
+import 'package:massage_2025_mobile/qr_screen.dart';
 
 class SecurityLicense extends StatefulWidget {
   SecurityLicense({super.key});

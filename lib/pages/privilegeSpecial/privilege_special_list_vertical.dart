@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:security_2025_mobile_v3/pages/privilegeSpecial/privilege_special_form.dart';
-import 'package:security_2025_mobile_v3/shared/extension.dart';
+import 'package:massage_2025_mobile/pages/privilegeSpecial/privilege_special_form.dart';
+import 'package:massage_2025_mobile/shared/extension.dart';
 
 class PrivilegeSpecialListVertical extends StatefulWidget {
   PrivilegeSpecialListVertical({

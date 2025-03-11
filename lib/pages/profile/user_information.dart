@@ -1,10 +1,10 @@
-import 'package:security_2025_mobile_v3/component/material/custom_alert_dialog.dart';
-import 'package:security_2025_mobile_v3/pages/blank_page/dialog_fail.dart';
-import 'package:security_2025_mobile_v3/pages/profile/edit_user_information.dart';
-import 'package:security_2025_mobile_v3/pages/profile/id_card_verification.dart';
-import 'package:security_2025_mobile_v3/pages/profile/identity_verification.dart';
-import 'package:security_2025_mobile_v3/pages/profile/setting_notification.dart';
-import 'package:security_2025_mobile_v3/shared/api_provider.dart';
+import 'package:massage_2025_mobile/component/material/custom_alert_dialog.dart';
+import 'package:massage_2025_mobile/pages/blank_page/dialog_fail.dart';
+import 'package:massage_2025_mobile/pages/profile/edit_user_information.dart';
+import 'package:massage_2025_mobile/pages/profile/id_card_verification.dart';
+import 'package:massage_2025_mobile/pages/profile/identity_verification.dart';
+import 'package:massage_2025_mobile/pages/profile/setting_notification.dart';
+import 'package:massage_2025_mobile/shared/api_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'change_password.dart';

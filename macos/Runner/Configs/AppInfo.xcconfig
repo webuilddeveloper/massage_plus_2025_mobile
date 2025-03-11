@@ -5,7 +5,7 @@
 // 'flutter create' template.
 
 // The application's name. By default this is also the title of the Flutter window.
-PRODUCT_NAME = security_2025_mobile_v3
+PRODUCT_NAME = massage_2025_mobile
 
 // The application's bundle identifier
 PRODUCT_BUNDLE_IDENTIFIER = td.webuild.security

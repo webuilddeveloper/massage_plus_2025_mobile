@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:security_2025_mobile_v3/pages/privilege/privilege_list_vertical.dart';
-import 'package:security_2025_mobile_v3/shared/api_provider.dart';
+import 'package:massage_2025_mobile/pages/privilege/privilege_list_vertical.dart';
+import 'package:massage_2025_mobile/shared/api_provider.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 
 class PrivilegeList extends StatefulWidget {

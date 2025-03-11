@@ -6,14 +6,14 @@ import 'package:flutter_html/flutter_html.dart';
 import 'dart:async';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:security_2025_mobile_v3/component/button_close_back.dart';
-import 'package:security_2025_mobile_v3/component/gallery_view.dart';
-import 'package:security_2025_mobile_v3/pages/blank_page/blank_loading.dart';
-import 'package:security_2025_mobile_v3/pages/poll/poll_dialog.dart';
-import 'package:security_2025_mobile_v3/pages/poll/poll_list.dart';
-import 'package:security_2025_mobile_v3/shared/api_provider.dart';
+import 'package:massage_2025_mobile/component/button_close_back.dart';
+import 'package:massage_2025_mobile/component/gallery_view.dart';
+import 'package:massage_2025_mobile/pages/blank_page/blank_loading.dart';
+import 'package:massage_2025_mobile/pages/poll/poll_dialog.dart';
+import 'package:massage_2025_mobile/pages/poll/poll_list.dart';
+import 'package:massage_2025_mobile/shared/api_provider.dart';
 import 'package:flutter/services.dart';
-import 'package:security_2025_mobile_v3/shared/extension.dart';
+import 'package:massage_2025_mobile/shared/extension.dart';
 // import 'package:flutter/scheduler.dart' show timeDilation;
 
 class ListItem {

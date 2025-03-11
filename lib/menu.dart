@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:security_2025_mobile_v3/pages/my_qr_code.dart';
+import 'package:massage_2025_mobile/pages/my_qr_code.dart';
 
 import 'component/material/check_avatar.dart';
 import 'home.dart';
@@ -171,26 +171,26 @@ class _MenuState extends State<Menu> {
           children: [
             _buildTap(
               0,
-              'หน้าหลัก',
+              '',
               icon: 'assets/logo/icons/home_icon.png',
               iconActive: 'assets/logo/icons/home_active_icon.png',
             ),
             _buildTap(
               1,
-              'ปฎิทิน',
+              '',
               icon: 'assets/logo/icons/calendar_icon.png',
               iconActive: 'assets/logo/icons/calendar_active_icon.png',
             ),
             _buildTap(
               2,
-              'ใบอนุญาต',
+              '',
               isLicense: true,
               icon: 'assets/logo/icons/icon_license.png',
               iconActive: 'assets/logo/icons/icon_license.png',
             ),
             _buildTap(
               3,
-              'แจ้งเตือน',
+              '',
               icon: 'assets/logo/icons/noti_icon.png',
               iconActive:
                   'assets/logo/icons/noti_active_icon.png', // ✅ แก้ไข path icon ผิด
@@ -198,7 +198,7 @@ class _MenuState extends State<Menu> {
             ),
             _buildTap(
               4,
-              'โปรไฟล์',
+              '',
               icon: 'assets/logo/icons/profile_icon.png',
               iconActive: 'assets/logo/icons/profile_active_icon.png',
               isNetwork: true,

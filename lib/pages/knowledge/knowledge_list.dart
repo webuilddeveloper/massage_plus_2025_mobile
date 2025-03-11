@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:security_2025_mobile_v3/pages/knowledge/knowledge_list_vertical.dart'
+import 'package:massage_2025_mobile/pages/knowledge/knowledge_list_vertical.dart'
     as grid;
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 

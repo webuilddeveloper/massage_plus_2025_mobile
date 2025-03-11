@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:security_2025_mobile_v3/pages/blank_page/dialog_fail.dart';
-import 'package:security_2025_mobile_v3/pages/profile/user_information.dart';
-import 'package:security_2025_mobile_v3/shared/api_provider.dart';
+import 'package:massage_2025_mobile/pages/blank_page/dialog_fail.dart';
+import 'package:massage_2025_mobile/pages/profile/user_information.dart';
+import 'package:massage_2025_mobile/shared/api_provider.dart';
 
 class PolicyIdentityVerificationPage extends StatefulWidget {
   PolicyIdentityVerificationPage({Key? key, required this.username})

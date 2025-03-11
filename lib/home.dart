@@ -1,46 +1,46 @@
 import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:qr_flutter/qr_flutter.dart';
-import 'package:security_2025_mobile_v3/component/coming_soon.dart';
-import 'package:security_2025_mobile_v3/pages/Complaint.dart';
-import 'package:security_2025_mobile_v3/pages/check%20_information.dart';
-import 'package:security_2025_mobile_v3/component/material/check_avatar.dart';
-import 'package:security_2025_mobile_v3/component/menu/build_verify_ticket.dart';
-import 'package:security_2025_mobile_v3/component/menu/color_item.dart';
-import 'package:security_2025_mobile_v3/component/menu/image_item.dart';
-import 'package:security_2025_mobile_v3/component/v2/button_menu_full.dart';
-import 'package:security_2025_mobile_v3/login.dart';
-import 'package:security_2025_mobile_v3/pages/blank_page/blank_loading.dart';
-import 'package:security_2025_mobile_v3/pages/blank_page/toast_fail.dart';
-import 'package:security_2025_mobile_v3/pages/dispute_an_allegation.dart';
-import 'package:security_2025_mobile_v3/pages/matching_job.dart';
-import 'package:security_2025_mobile_v3/pages/my_qr_code.dart';
-import 'package:security_2025_mobile_v3/pages/news/news_form.dart';
-import 'package:security_2025_mobile_v3/pages/reporter/reporter_main.dart';
-import 'package:security_2025_mobile_v3/pages/store_productlist.dart';
-import 'package:security_2025_mobile_v3/pages/warning/warning_list.dart';
+import 'package:massage_2025_mobile/component/coming_soon.dart';
+import 'package:massage_2025_mobile/pages/Complaint.dart';
+import 'package:massage_2025_mobile/pages/check%20_information.dart';
+import 'package:massage_2025_mobile/component/material/check_avatar.dart';
+import 'package:massage_2025_mobile/component/menu/build_verify_ticket.dart';
+import 'package:massage_2025_mobile/component/menu/color_item.dart';
+import 'package:massage_2025_mobile/component/menu/image_item.dart';
+import 'package:massage_2025_mobile/component/v2/button_menu_full.dart';
+import 'package:massage_2025_mobile/login.dart';
+import 'package:massage_2025_mobile/pages/blank_page/blank_loading.dart';
+import 'package:massage_2025_mobile/pages/blank_page/toast_fail.dart';
+import 'package:massage_2025_mobile/pages/dispute_an_allegation.dart';
+import 'package:massage_2025_mobile/pages/matching_job.dart';
+import 'package:massage_2025_mobile/pages/my_qr_code.dart';
+import 'package:massage_2025_mobile/pages/news/news_form.dart';
+import 'package:massage_2025_mobile/pages/reporter/reporter_main.dart';
+import 'package:massage_2025_mobile/pages/store_productlist.dart';
+import 'package:massage_2025_mobile/pages/warning/warning_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
-import 'package:security_2025_mobile_v3/component/carousel_banner.dart';
-import 'package:security_2025_mobile_v3/pages/about_us/about_us_form.dart';
-import 'package:security_2025_mobile_v3/pages/menu_grid_item.dart';
-import 'package:security_2025_mobile_v3/pages/notification/notification_list.dart';
-import 'package:security_2025_mobile_v3/pages/poi/poi_list.dart';
-import 'package:security_2025_mobile_v3/pages/poll/poll_list.dart';
-import 'package:security_2025_mobile_v3/pages/welfare/welfare_list.dart';
+import 'package:massage_2025_mobile/component/carousel_banner.dart';
+import 'package:massage_2025_mobile/pages/about_us/about_us_form.dart';
+import 'package:massage_2025_mobile/pages/menu_grid_item.dart';
+import 'package:massage_2025_mobile/pages/notification/notification_list.dart';
+import 'package:massage_2025_mobile/pages/poi/poi_list.dart';
+import 'package:massage_2025_mobile/pages/poll/poll_list.dart';
+import 'package:massage_2025_mobile/pages/welfare/welfare_list.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:intl/intl.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
-import 'package:security_2025_mobile_v3/component/link_url_in.dart';
-import 'package:security_2025_mobile_v3/pages/contact/contact_list_category.dart';
-import 'package:security_2025_mobile_v3/pages/news/news_list.dart';
-import 'package:security_2025_mobile_v3/pages/privilege/privilege_main.dart';
-import 'package:security_2025_mobile_v3/pages/profile/user_information.dart';
-import 'package:security_2025_mobile_v3/pages/register_permission_mian.dart';
-import 'package:security_2025_mobile_v3/shared/api_provider.dart';
-import 'package:security_2025_mobile_v3/component/carousel_form.dart';
+import 'package:massage_2025_mobile/component/link_url_in.dart';
+import 'package:massage_2025_mobile/pages/contact/contact_list_category.dart';
+import 'package:massage_2025_mobile/pages/news/news_list.dart';
+import 'package:massage_2025_mobile/pages/privilege/privilege_main.dart';
+import 'package:massage_2025_mobile/pages/profile/user_information.dart';
+import 'package:massage_2025_mobile/pages/register_permission_mian.dart';
+import 'package:massage_2025_mobile/shared/api_provider.dart';
+import 'package:massage_2025_mobile/component/carousel_form.dart';
 import 'component/carousel_rotation.dart';
 import 'pages/event_calendar/event_calendar_main.dart';
 import 'pages/knowledge/knowledge_list.dart';
@@ -1771,7 +1771,7 @@ class _HomePageState extends State<HomePage> {
       _futureMenu = postDio('${menuApi}read', {'limit': 10});
       _futureBanner = postDio('${mainBannerApi}read', {
         'limit': 10,
-        'app': 'security',
+        'app': 'massage',
       });
       _futureRotation = postDio('${mainRotationApi}read', {'limit': 10});
       _futureMainPopUp = postDio('${mainPopupHomeApi}read', {'limit': 10});
@@ -1781,7 +1781,7 @@ class _HomePageState extends State<HomePage> {
       _futureNews = postDio('${newsApi}read', {
         'skip': _currentNewsPage * _newsLimit,
         'limit': _newsLimit,
-        'app': 'security',
+        'app': 'massage',
       });
 
       _futureVerifyTicket = postDio(getNotpaidTicketListApi,
@@ -1888,7 +1888,7 @@ class _HomePageState extends State<HomePage> {
     final moreNews = await postDio('${newsApi}read', {
       'skip': _currentNewsPage * _newsLimit,
       'limit': _newsLimit,
-      'app': 'security',
+      'app': 'massage',
     });
     if (moreNews != null && moreNews.length < _newsLimit) {
       _hasMoreNews = false;
@@ -1917,7 +1917,7 @@ class _HomePageState extends State<HomePage> {
       var newsData = await postDio('${newsApi}read', {
         'skip': 0,
         'limit': _newsLimit,
-        'app': 'security',
+        'app': 'massage',
       });
 
       setState(() {

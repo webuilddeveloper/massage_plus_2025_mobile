@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:security_2025_mobile_v3/component/header.dart';
-import 'package:security_2025_mobile_v3/component/key_search.dart';
-import 'package:security_2025_mobile_v3/shared/api_provider.dart';
-import 'package:security_2025_mobile_v3/pages/contact/contact_list_vertical.dart';
+import 'package:massage_2025_mobile/component/header.dart';
+import 'package:massage_2025_mobile/component/key_search.dart';
+import 'package:massage_2025_mobile/shared/api_provider.dart';
+import 'package:massage_2025_mobile/pages/contact/contact_list_vertical.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 
 class ContactList extends StatefulWidget {

@@ -1,6 +1,6 @@
-import 'package:security_2025_mobile_v3/component/headerCalendar.dart';
-import 'package:security_2025_mobile_v3/pages/event_calendar/calendar.dart';
-import 'package:security_2025_mobile_v3/pages/event_calendar/event_calendar_list.dart';
+import 'package:massage_2025_mobile/component/headerCalendar.dart';
+import 'package:massage_2025_mobile/pages/event_calendar/calendar.dart';
+import 'package:massage_2025_mobile/pages/event_calendar/event_calendar_list.dart';
 import 'package:flutter/material.dart';
 
 class EventCalendarMain extends StatefulWidget {

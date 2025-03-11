@@ -1,10 +1,10 @@
 import 'dart:async';
-import 'package:security_2025_mobile_v3/home_v2.dart';
+import 'package:massage_2025_mobile/home_v2.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-import 'package:security_2025_mobile_v3/login.dart';
-import 'package:security_2025_mobile_v3/pages/blank_page/dialog_fail.dart';
-import 'package:security_2025_mobile_v3/shared/api_provider.dart';
+import 'package:massage_2025_mobile/login.dart';
+import 'package:massage_2025_mobile/pages/blank_page/dialog_fail.dart';
+import 'package:massage_2025_mobile/shared/api_provider.dart';
 
 class SplashPage extends StatefulWidget {
   @override

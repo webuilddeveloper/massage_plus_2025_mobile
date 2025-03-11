@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-import 'package:security_2025_mobile_v3/component/tab_category.dart';
-import 'package:security_2025_mobile_v3/pages/privilegeSpecial/list_content_horizontal_privilegeSpecial.dart';
-import 'package:security_2025_mobile_v3/pages/privilegeSpecial/privilege_special_form.dart';
-import 'package:security_2025_mobile_v3/pages/privilegeSpecial/privilege_special_list_vertical.dart';
+import 'package:massage_2025_mobile/component/tab_category.dart';
+import 'package:massage_2025_mobile/pages/privilegeSpecial/list_content_horizontal_privilegeSpecial.dart';
+import 'package:massage_2025_mobile/pages/privilegeSpecial/privilege_special_form.dart';
+import 'package:massage_2025_mobile/pages/privilegeSpecial/privilege_special_list_vertical.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
-import 'package:security_2025_mobile_v3/shared/api_provider.dart';
+import 'package:massage_2025_mobile/shared/api_provider.dart';
 
 class PrivilegeSpecialList extends StatefulWidget {
   PrivilegeSpecialList({

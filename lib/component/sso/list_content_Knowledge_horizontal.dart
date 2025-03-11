@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:security_2025_mobile_v3/component/sso/list_content_horizontal_loading.dart';
+import 'package:massage_2025_mobile/component/sso/list_content_horizontal_loading.dart';
 
 // ignore: must_be_immutable
 class ListContentKnowledgeHorizontal extends StatefulWidget {

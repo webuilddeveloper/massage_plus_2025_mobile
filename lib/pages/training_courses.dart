@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:security_2025_mobile_v3/pages/TrainingCourses_detail.dart';
+import 'package:massage_2025_mobile/pages/TrainingCourses_detail.dart';
 
 class TrainingCourses extends StatefulWidget {
   const TrainingCourses({super.key});

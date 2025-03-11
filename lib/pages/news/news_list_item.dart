@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:security_2025_mobile_v3/pages/news/news_form.dart';
-import 'package:security_2025_mobile_v3/shared/extension.dart';
+import 'package:massage_2025_mobile/pages/news/news_form.dart';
+import 'package:massage_2025_mobile/shared/extension.dart';
 
 newsList(BuildContext context, Future<dynamic> model, String title) {
   return FutureBuilder<dynamic>(

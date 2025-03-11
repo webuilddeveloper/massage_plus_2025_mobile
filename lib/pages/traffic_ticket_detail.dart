@@ -1,13 +1,13 @@
-import 'package:security_2025_mobile_v3/component/gallery_view.dart';
-import 'package:security_2025_mobile_v3/component/material/custom_alert_dialog.dart';
-import 'package:security_2025_mobile_v3/pages/appeal.dart';
-import 'package:security_2025_mobile_v3/pages/blank_page/toast_fail.dart';
-import 'package:security_2025_mobile_v3/pages/qr_payment.dart';
-import 'package:security_2025_mobile_v3/shared/api_provider.dart';
-import 'package:security_2025_mobile_v3/shared/extension.dart';
+import 'package:massage_2025_mobile/component/gallery_view.dart';
+import 'package:massage_2025_mobile/component/material/custom_alert_dialog.dart';
+import 'package:massage_2025_mobile/pages/appeal.dart';
+import 'package:massage_2025_mobile/pages/blank_page/toast_fail.dart';
+import 'package:massage_2025_mobile/pages/qr_payment.dart';
+import 'package:massage_2025_mobile/shared/api_provider.dart';
+import 'package:massage_2025_mobile/shared/extension.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:security_2025_mobile_v3/component/header.dart';
+import 'package:massage_2025_mobile/component/header.dart';
 
 class TrafficTicketDetail extends StatefulWidget {
   TrafficTicketDetail({

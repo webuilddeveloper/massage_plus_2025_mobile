@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:security_2025_mobile_v3/pages/privilege/privilege_form.dart';
+import 'package:massage_2025_mobile/pages/privilege/privilege_form.dart';
 
 class PrivilegeListVertical extends StatefulWidget {
   PrivilegeListVertical({Key? key, required this.site, required this.model})

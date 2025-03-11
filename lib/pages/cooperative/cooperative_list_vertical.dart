@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:security_2025_mobile_v3/pages/cooperative/cooperative_form.dart';
+import 'package:massage_2025_mobile/pages/cooperative/cooperative_form.dart';
 
 class CooperativeListVertical extends StatefulWidget {
   CooperativeListVertical({Key? key, required this.site, required this.model})

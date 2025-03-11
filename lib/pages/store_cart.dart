@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:security_2025_mobile_v3/pages/store_order_summary.dart';
+import 'package:massage_2025_mobile/pages/store_order_summary.dart';
 
 class CartPage extends StatefulWidget {
   final List<Map<String, dynamic>> cartItems;

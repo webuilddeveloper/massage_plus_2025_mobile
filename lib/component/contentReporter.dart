@@ -5,9 +5,9 @@ import 'package:google_maps_flutter/google_maps_flutter.dart' as google_maps;
 import 'package:flutter_html/flutter_html.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:security_2025_mobile_v3/component/gallery_view.dart';
-import 'package:security_2025_mobile_v3/shared/api_provider.dart';
-import 'package:security_2025_mobile_v3/shared/extension.dart';
+import 'package:massage_2025_mobile/component/gallery_view.dart';
+import 'package:massage_2025_mobile/shared/api_provider.dart';
+import 'package:massage_2025_mobile/shared/extension.dart';
 
 // ignore: must_be_immutable
 class ContentReporter extends StatefulWidget {

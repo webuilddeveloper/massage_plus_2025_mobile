@@ -3,10 +3,10 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:intl/intl.dart';
-import 'package:security_2025_mobile_v3/component/button_close_back.dart';
-import 'package:security_2025_mobile_v3/component/carousel_form.dart';
-import 'package:security_2025_mobile_v3/component/link_url_in.dart';
-import 'package:security_2025_mobile_v3/pages/main_popup/mainpop_up_form.dart';
+import 'package:massage_2025_mobile/component/button_close_back.dart';
+import 'package:massage_2025_mobile/component/carousel_form.dart';
+import 'package:massage_2025_mobile/component/link_url_in.dart';
+import 'package:massage_2025_mobile/pages/main_popup/mainpop_up_form.dart';
 
 class MainPopupDialog extends StatefulWidget {
   MainPopupDialog(

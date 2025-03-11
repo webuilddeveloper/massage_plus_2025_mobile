@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:security_2025_mobile_v3/pages/blank_page/blank_data.dart';
-import 'package:security_2025_mobile_v3/pages/blank_page/toast_fail.dart';
-import 'package:security_2025_mobile_v3/pages/poll/poll_form.dart';
-import 'package:security_2025_mobile_v3/shared/extension.dart';
+import 'package:massage_2025_mobile/pages/blank_page/blank_data.dart';
+import 'package:massage_2025_mobile/pages/blank_page/toast_fail.dart';
+import 'package:massage_2025_mobile/pages/poll/poll_form.dart';
+import 'package:massage_2025_mobile/shared/extension.dart';
 
 class PollListVertical extends StatefulWidget {
   PollListVertical(

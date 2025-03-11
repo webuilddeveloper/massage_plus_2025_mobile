@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:security_2025_mobile_v3/splash.dart';
+import 'package:massage_2025_mobile/splash.dart';
 
 dialogFail(BuildContext context,
     {String title = 'การเชื่อมต่อมีปัญหากรุณาลองใหม่อีกครั้ง',

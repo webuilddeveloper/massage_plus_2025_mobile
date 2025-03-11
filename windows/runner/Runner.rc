@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "security_2025_mobile_v3" "\0"
+            VALUE "FileDescription", "massage_2025_mobile" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "security_2025_mobile_v3" "\0"
+            VALUE "InternalName", "massage_2025_mobile" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2025 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "security_2025_mobile_v3.exe" "\0"
-            VALUE "ProductName", "security_2025_mobile_v3" "\0"
+            VALUE "OriginalFilename", "massage_2025_mobile.exe" "\0"
+            VALUE "ProductName", "massage_2025_mobile" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

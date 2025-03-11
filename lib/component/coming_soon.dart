@@ -1,7 +1,7 @@
-import 'package:security_2025_mobile_v3/pages/blank_page/blank_loading.dart';
-import 'package:security_2025_mobile_v3/component/button_close_back.dart';
-import 'package:security_2025_mobile_v3/component/content_with_out_share.dart';
-import 'package:security_2025_mobile_v3/shared/api_provider.dart';
+import 'package:massage_2025_mobile/pages/blank_page/blank_loading.dart';
+import 'package:massage_2025_mobile/component/button_close_back.dart';
+import 'package:massage_2025_mobile/component/content_with_out_share.dart';
+import 'package:massage_2025_mobile/shared/api_provider.dart';
 import 'package:flutter/material.dart';
 
 class ComingSoon extends StatefulWidget {

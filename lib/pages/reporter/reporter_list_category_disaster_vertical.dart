@@ -1,4 +1,4 @@
-import 'package:security_2025_mobile_v3/pages/reporter/reporter_disaster_list.dart';
+import 'package:massage_2025_mobile/pages/reporter/reporter_disaster_list.dart';
 import 'package:flutter/material.dart';
 
 class ReporterListCategoryDisasterVertical extends StatefulWidget {

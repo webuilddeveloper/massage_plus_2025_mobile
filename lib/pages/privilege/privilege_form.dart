@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'dart:async';
-import 'package:security_2025_mobile_v3/component/button_close_back.dart';
-import 'package:security_2025_mobile_v3/component/gallery_view.dart';
-import 'package:security_2025_mobile_v3/component/link_url_out.dart';
-import 'package:security_2025_mobile_v3/pages/blank_page/blank_loading.dart';
-import 'package:security_2025_mobile_v3/shared/api_provider.dart';
-import 'package:security_2025_mobile_v3/shared/extension.dart';
+import 'package:massage_2025_mobile/component/button_close_back.dart';
+import 'package:massage_2025_mobile/component/gallery_view.dart';
+import 'package:massage_2025_mobile/component/link_url_out.dart';
+import 'package:massage_2025_mobile/pages/blank_page/blank_loading.dart';
+import 'package:massage_2025_mobile/shared/api_provider.dart';
+import 'package:massage_2025_mobile/shared/extension.dart';
 
 class PrivilegeForm extends StatefulWidget {
   PrivilegeForm({Key? key, required this.code, this.model}) : super(key: key);

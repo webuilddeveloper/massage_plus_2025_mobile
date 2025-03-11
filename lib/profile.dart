@@ -1,11 +1,11 @@
-import 'package:security_2025_mobile_v3/component/material/check_avatar.dart';
-import 'package:security_2025_mobile_v3/component/material/custom_alert_dialog.dart';
-import 'package:security_2025_mobile_v3/pages/behavior_points.dart';
-import 'package:security_2025_mobile_v3/pages/profile/drivers_info.dart';
-import 'package:security_2025_mobile_v3/pages/profile/id_card_verification.dart';
+import 'package:massage_2025_mobile/component/material/check_avatar.dart';
+import 'package:massage_2025_mobile/component/material/custom_alert_dialog.dart';
+import 'package:massage_2025_mobile/pages/behavior_points.dart';
+import 'package:massage_2025_mobile/pages/profile/drivers_info.dart';
+import 'package:massage_2025_mobile/pages/profile/id_card_verification.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-import 'package:security_2025_mobile_v3/pages/blank_page/blank_loading.dart';
+import 'package:massage_2025_mobile/pages/blank_page/blank_loading.dart';
 
 import 'pages/profile/register_with_diver_license.dart';
 import 'pages/profile/register_with_license_plate.dart';

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:security_2025_mobile_v3/pages/check_security_license.dart';
+import 'package:massage_2025_mobile/pages/check_security_license.dart';
 
 class VerifyStangPage extends StatefulWidget {
   const VerifyStangPage({Key? key}) : super(key: key);

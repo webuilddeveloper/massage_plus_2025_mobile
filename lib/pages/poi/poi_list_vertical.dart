@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:security_2025_mobile_v3/pages/poi/poi_form.dart';
-import 'package:security_2025_mobile_v3/shared/api_provider.dart';
+import 'package:massage_2025_mobile/pages/poi/poi_form.dart';
+import 'package:massage_2025_mobile/shared/api_provider.dart';
 
 class PoiListVertical extends StatefulWidget {
   PoiListVertical({Key? key, required this.model}) : super(key: key);

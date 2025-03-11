@@ -1,11 +1,11 @@
 import 'dart:convert';
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:security_2025_mobile_v3/pages/privilege/list_content_horizontal_privilege.dart';
-import 'package:security_2025_mobile_v3/pages/privilege/list_content_horizontal_privlege_suggested.dart';
-import 'package:security_2025_mobile_v3/pages/privilege/privilege_form.dart';
-import 'package:security_2025_mobile_v3/pages/privilege/privilege_list.dart';
-import 'package:security_2025_mobile_v3/shared/api_provider.dart';
+import 'package:massage_2025_mobile/pages/privilege/list_content_horizontal_privilege.dart';
+import 'package:massage_2025_mobile/pages/privilege/list_content_horizontal_privlege_suggested.dart';
+import 'package:massage_2025_mobile/pages/privilege/privilege_form.dart';
+import 'package:massage_2025_mobile/pages/privilege/privilege_list.dart';
+import 'package:massage_2025_mobile/shared/api_provider.dart';
 import 'package:http/http.dart' as http;
 
 class PrivilegeAllContent extends StatefulWidget {

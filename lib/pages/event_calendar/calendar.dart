@@ -4,10 +4,10 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:table_calendar/table_calendar.dart';
-import 'package:security_2025_mobile_v3/pages/event_calendar/event_calendar_form.dart';
-import 'package:security_2025_mobile_v3/pages/event_calendar/event_utils.dart';
-import 'package:security_2025_mobile_v3/shared/api_provider.dart';
-import 'package:security_2025_mobile_v3/shared/extension.dart';
+import 'package:massage_2025_mobile/pages/event_calendar/event_calendar_form.dart';
+import 'package:massage_2025_mobile/pages/event_calendar/event_utils.dart';
+import 'package:massage_2025_mobile/shared/api_provider.dart';
+import 'package:massage_2025_mobile/shared/extension.dart';
 
 class CalendarPage extends StatefulWidget {
   @override

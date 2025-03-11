@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:security_2025_mobile_v3/pages/warning/warning_form.dart';
-import 'package:security_2025_mobile_v3/shared/extension.dart';
+import 'package:massage_2025_mobile/pages/warning/warning_form.dart';
+import 'package:massage_2025_mobile/shared/extension.dart';
 
 warningList(BuildContext context, Future<dynamic> model, String title) {
   return FutureBuilder<dynamic>(

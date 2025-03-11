@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:security_2025_mobile_v3/pages/blank_page/blank_loading.dart';
+import 'package:massage_2025_mobile/pages/blank_page/blank_loading.dart';
 
 blankMenu(BuildContext context) {
   double width = MediaQuery.of(context).size.width;

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:security_2025_mobile_v3/component/key_search.dart';
-import 'package:security_2025_mobile_v3/component/tab_category.dart';
-import 'package:security_2025_mobile_v3/pages/news/news_list_vertical.dart';
-import 'package:security_2025_mobile_v3/shared/api_provider.dart' as service;
+import 'package:massage_2025_mobile/component/key_search.dart';
+import 'package:massage_2025_mobile/component/tab_category.dart';
+import 'package:massage_2025_mobile/pages/news/news_list_vertical.dart';
+import 'package:massage_2025_mobile/shared/api_provider.dart' as service;
 import 'package:pull_to_refresh/pull_to_refresh.dart';
-import 'package:security_2025_mobile_v3/shared/api_provider.dart';
+import 'package:massage_2025_mobile/shared/api_provider.dart';
 
 class NewsList extends StatefulWidget {
   NewsList({

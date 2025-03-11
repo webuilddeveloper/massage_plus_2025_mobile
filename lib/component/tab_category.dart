@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:security_2025_mobile_v3/shared/api_provider.dart';
+import 'package:massage_2025_mobile/shared/api_provider.dart';
 
 class CategorySelector extends StatefulWidget {
   CategorySelector(

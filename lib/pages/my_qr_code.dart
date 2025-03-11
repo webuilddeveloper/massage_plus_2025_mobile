@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:qr_flutter/qr_flutter.dart';
-import 'package:security_2025_mobile_v3/component/material/check_avatar.dart';
-import 'package:security_2025_mobile_v3/pages/blank_page/blank_loading.dart';
-import 'package:security_2025_mobile_v3/shared/api_provider.dart';
+import 'package:massage_2025_mobile/component/material/check_avatar.dart';
+import 'package:massage_2025_mobile/pages/blank_page/blank_loading.dart';
+import 'package:massage_2025_mobile/shared/api_provider.dart';
 
 class MyQrCode extends StatefulWidget {
   MyQrCode({
