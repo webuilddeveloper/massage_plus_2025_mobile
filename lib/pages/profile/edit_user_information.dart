@@ -1065,28 +1065,6 @@ class _EditUserInformationPageState extends State<EditUserInformationPage> {
                 children: <Widget>[
                   Stack(
                     children: <Widget>[
-                      // Container(
-                      //   decoration: BoxDecoration(
-                      //     image: DecorationImage(
-                      //       fit: BoxFit.fill,
-                      //       image: AssetImage(
-                      //         'assets/background/backgroundUserInfo.png',
-                      //       ),
-                      //     ),
-                      //   ),
-                      //   height: 150.0,
-                      // ),
-                      // Container(
-                      //   height: 150.0,
-                      //   decoration: BoxDecoration(
-                      //     image: DecorationImage(
-                      //       fit: BoxFit.fill,
-                      //       image: AssetImage(
-                      //         'assets/background/backgroundUserInfoColor.png',
-                      //       ),
-                      //     ),
-                      //   ),
-                      // ),
                       Center(
                         child: Container(
                           width: 96.0,
@@ -1124,9 +1102,8 @@ class _EditUserInformationPageState extends State<EditUserInformationPage> {
                           width: 31.0,
                           height: 31.0,
                           decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(16),
-                            color: Color(0xFFF5A623),
-                          ),
+                              borderRadius: BorderRadius.circular(16),
+                              color: Theme.of(context).primaryColor),
                           margin: EdgeInsets.only(top: 90.0, left: 70.0),
                           child: Container(
                             padding: EdgeInsets.all(5.0),

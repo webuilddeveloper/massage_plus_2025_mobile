@@ -54,16 +54,10 @@ class _RegisterPermissionState extends State<RegisterPermission>
       "maxFiles": 3,
       "files": <PlatformFile>[],
       "required": true,
-      "description": "ขนาด 1 นิ้ว ถ่ายไม่เกิน 6 เดือน",
+      "description": "ขนาด 1-2 นิ้ว ถ่ายไม่เกิน 6 เดือน",
     },
     {
-      "categoryName": "สำเนาวุฒิการศึกษา",
-      "maxFiles": 1,
-      "files": <PlatformFile>[],
-      "required": true,
-    },
-    {
-      "categoryName": "หนังสือรับรองการอบรม",
+      "categoryName": "วุฒิบัตรหรือใบรับรอง\nการฝึกอบรม",
       "maxFiles": 1,
       "files": <PlatformFile>[],
       "required": true,
@@ -142,14 +136,14 @@ class _RegisterPermissionState extends State<RegisterPermission>
 
   String getTitle() {
     switch (widget.type) {
-      case 'apply':
-        return 'ลงทะเบียนแบบขออนุญาต';
-      case 'renew':
-        return 'การขอต่ออายุใบอนุญาต';
-      case 'lost':
-        return 'กรณีใบอนุญาตสูญหายหรือชำรุด';
+      case 'Traditional':
+        return 'หมอนวดแผนไทย';
+      case 'Spa':
+        return 'หมอนวดเพื่อสุขภาพ';
+      case 'Medical':
+        return 'หมอนวดเพื่อการแพทย์แผนไทย';
       default:
-        return 'การขอแก้ไขใบอนุญาต';
+        return 'หมอนวดแผนจีนและแผนตะวันออก';
     }
   }
 
@@ -407,8 +401,6 @@ class _RegisterPermissionState extends State<RegisterPermission>
                   children: [
                     GestureDetector(
                       onTap: () {
-                        // showPaymentDialog(context);
-
                         Navigator.push(
                           context,
                           MaterialPageRoute(
@@ -751,23 +743,18 @@ class _RegisterPermissionState extends State<RegisterPermission>
                         ),
                         _buildDocumentItem(
                           '3',
-                          'รูปถ่ายครึ่งตัว หน้าตรงไม่สวมหมวกและแว่นตาดำ\nขนาด 1 นิ้ว (2.5 x 3 ซม.) ถ่ายไม่เกิน 6 เดือน จำนวน 3 รูป',
-                          Icons.photo_camera,
-                        ),
-                        _buildDocumentItem(
-                          '4',
-                          'สำเนาวุฒิการศึกษาที่แสดงว่าสำเร็จการศึกษาตามหลักสูตรการศึกษาภาคบังคับ',
+                          'วุฒิบัตรหรือใบรับรองการฝึกอบรมจากสถาบันที่ได้รับการรับรอง',
                           Icons.school,
                         ),
                         _buildDocumentItem(
-                          '5',
-                          'หนังสือรับรองผ่านการอบรม หลักสูตรการรักษาความปลอดภัย',
-                          Icons.verified_user,
-                        ),
-                        _buildDocumentItem(
-                          '6',
+                          '4',
                           'ใบรับรองแพทย์ รับรองว่าไม่เป็นโรคต้องห้ามตามที่คณะกรรมการกำหนด',
                           Icons.local_hospital,
+                        ),
+                        _buildDocumentItem(
+                          '5',
+                          'รูปถ่ายครึ่งตัว หน้าตรงไม่สวมหมวกและแว่นตาดำ\nขนาด 1-2 นิ้ว ถ่ายไม่เกิน 6 เดือน จำนวน 2-4 ใบ ',
+                          Icons.photo_camera,
                         ),
                       ],
                     ),

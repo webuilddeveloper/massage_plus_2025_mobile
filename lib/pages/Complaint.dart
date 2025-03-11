@@ -23,12 +23,12 @@ class _ComplaintFormState extends State<ComplaintForm> {
   String? selectedItem;
 
   final List<Map<String, String>> mockItems = [
-    {'id': '1', 'name': 'พฤติกรรมและมารยาท'},
-    {'id': '2', 'name': 'การปฏิบัติหน้าที่'},
-    {'id': '3', 'name': 'ความปลอดภัย'},
-    {'id': '4', 'name': 'การใช้ตำแหน่งโดยมิชอบ'},
-    {'id': '5', 'name': ' อุปกรณ์และเครื่องแบบ'},
-    {'id': '6', 'name': ' อื่นๆ'},
+    {'id': '1', 'name': 'พูดจาไม่สุภาพ หรือแสดงกิริยาที่ไม่เหมาะสม'},
+    {'id': '2', 'name': 'หมอนวดไม่มีใบอนุญาต หรือไม่มีคุณสมบัติที่ถูกต้อง'},
+    {'id': '3', 'name': 'อุปกรณ์ที่ใช้ไม่สะอาด หรือไม่ได้มาตรฐาน'},
+    {'id': '4', 'name': 'สถานที่ให้บริการไม่มีมาตรฐานด้านสุขอนามัย'},
+    {'id': '5', 'name': 'หมอนวดไม่ปฏิบัติตามข้อกำหนดด้านสุขภาพ'},
+    {'id': '6', 'name': 'อื่นๆ'},
   ];
   void _showPickerImage(context) {
     showModalBottomSheet(
@@ -173,16 +173,29 @@ class _ComplaintFormState extends State<ComplaintForm> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              labelTextFormField('* หัวข้อเรื่องร้องเรียน'),
-              textFormField(
-                txtheading,
-                null,
-                'หัวข้อเรื่องร้องเรียน',
-                'หัวข้อเรื่องร้องเรียน',
-                true,
-                false,
-                false,
-              ),
+              labelTextFormField('* เลือกหัวข้อร้องเรียน'),
+              // dropdownSelect(selectedItem, (String? newValue) {
+              //   setState(() {
+              //     selectedItem = newValue;
+              //   });
+              // }, 'เลือกหัวข้อร้องเรียน', true, mockItems),
+              dropdownSelect(context, selectedItem, (String? newValue) {
+                setState(() {
+                  selectedItem = newValue;
+                });
+              }, 'เลือกหัวข้อร้องเรียน', true, mockItems),
+              SizedBox(height: 10),
+              selectedItem == '6'
+                  ? textFormField(
+                      txtheading,
+                      null,
+                      'เรื่องร้องเรียน',
+                      'เรื่องร้องเรียน',
+                      true,
+                      false,
+                      false,
+                    )
+                  : SizedBox(),
               labelTextFormField('* ผู้ถูกร้องเรียน'),
               textFormField(
                 txtheading,
@@ -263,24 +276,6 @@ class _ComplaintFormState extends State<ComplaintForm> {
                   ],
                 ),
               ),
-              labelTextFormField('* เลือกหัวข้อร้องเรียน'),
-              dropdownSelect(selectedItem, (String? newValue) {
-                setState(() {
-                  selectedItem = newValue;
-                });
-              }, 'เลือกหัวข้อร้องเรียน', true, mockItems),
-              SizedBox(height: 10),
-              selectedItem == '6'
-                  ? textFormField(
-                      txtheading,
-                      null,
-                      'เรื่องร้องเรียน',
-                      'เรื่องร้องเรียน',
-                      true,
-                      false,
-                      false,
-                    )
-                  : SizedBox(),
               labelTextFormField('* รายละเอียดข้อมูลร้องเรียน'),
               textFormField(
                 txtheading,

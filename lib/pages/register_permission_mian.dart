@@ -60,15 +60,15 @@ class _mainPermissionState extends State<mainPermission>
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SecurityLicenseCard(
-                title: "ขอรับใบอนุญาตพนักงานรักษาความปลอดภัย",
-                description: "กรอกข้อมูลเพื่อขอรับใบอนุญาตทำงาน",
-                icon: Icons.badge,
+                title: "หมอนวดแผนไทย \n(Traditional Thai Massage)",
+                description: "การนวดเพื่อส่งเสริมสุขภาพ ",
+                icon: Icons.self_improvement, // ไอคอนสื่อถึงโยคะ/การผ่อนคลาย
                 onTap: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
                       builder: (context) => RegisterPermission(
-                        type: 'apply',
+                        type: 'Traditional',
                       ),
                     ),
                   );
@@ -76,16 +76,16 @@ class _mainPermissionState extends State<mainPermission>
               ),
               SizedBox(height: 16),
               SecurityLicenseCard(
-                title: "การขอต่ออายุใบอนุญาต",
+                title: "หมอนวดเพื่อสุขภาพ \n(Spa & Wellness Massage)",
                 description:
-                    "พนักงานรักษาความปลอดภัยรับอนุญาต ยื่นคำขอภายใน 60 วัน ก่อนวันที่ใบอนุญาตสิ้นอายุ",
-                icon: Icons.security_update_warning,
+                    "การนวดน้ำมันเพื่อผ่อนคลาย การนวดบำบัดอื่นๆ เช่น นวดหินร้อน",
+                icon: Icons.spa, // ไอคอนที่เกี่ยวกับสปาและความผ่อนคลาย
                 onTap: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
                       builder: (context) => RegisterPermission(
-                        type: 'renew',
+                        type: 'Spa',
                       ),
                     ),
                   );
@@ -93,16 +93,17 @@ class _mainPermissionState extends State<mainPermission>
               ),
               SizedBox(height: 16),
               SecurityLicenseCard(
-                title: "กรณีใบอนุญาตฯ สูญหายถูกทำลาย หรือชำรุดในสาระสำคัญ",
+                title: "หมอนวดเพื่อการแพทย์แผนไทย (Thai Medical Massage)",
                 description:
-                    "พนักงานรักษาความปลอดภัยรับอนุญาต ยื่นคำขอรับใบแทนใบอนุญาต ดังกล่าวต่อนายทะเบียนภายใน 30 วัน นับแต่วันที่ได้ทราบการสูญหาย ถูกทำลาย หรือชำรุด",
-                icon: Icons.dangerous,
+                    "การนวดเพื่อรักษาอาการปวดเมื่อยเฉพาะจุด เช่น ออฟฟิศซินโดรม",
+                icon:
+                    Icons.local_hospital, // ไอคอนที่สื่อถึงการรักษาทางการแพทย์
                 onTap: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
                       builder: (context) => RegisterPermission(
-                        type: 'lost',
+                        type: 'Medical',
                       ),
                     ),
                   );
@@ -110,16 +111,18 @@ class _mainPermissionState extends State<mainPermission>
               ),
               SizedBox(height: 16),
               SecurityLicenseCard(
-                title: "การขอแก้ไขใบอนุญาต",
+                title:
+                    "หมอนวดแผนจีนและแผนตะวันออก (Chinese & Oriental Massage)",
                 description:
-                    "ผู้รับใบอนุญาตเป็นพนักงานรักษาความปลอดภัยรับอนุญาตที่ประสงค์จะแก้ไขเพิ่มเติมชื่อตัว ชื่อสกุล หรือชื่อตัวและชื่อสกุล หรือรายการประวัติอื่นใดในใบอนุญาตเป็นพนักงานรักษาความปลอดภัยรับอนุญาต ",
-                icon: Icons.edit_document,
+                    "การกดจุดฝังเข็ม การใช้ศาสตร์จีน เช่น การครอบแก้ว หรือกัวซา",
+                icon: Icons
+                    .healing, // ไอคอนสื่อถึงศาสตร์แพทย์แผนจีน (Flutter ยังไม่มีไอคอนนี้ อาจใช้ alternative)
                 onTap: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
                       builder: (context) => RegisterPermission(
-                        type: 'edit',
+                        type: 'Chinese',
                       ),
                     ),
                   );

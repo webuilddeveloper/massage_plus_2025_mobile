@@ -260,7 +260,7 @@ class _KnowledgeDetailPageState extends State<KnowledgeForm> {
                         child: MaterialButton(
                           minWidth: MediaQuery.of(context).size.width,
                           onPressed: () {
-                            launchURL(model['fileUrl']);
+                            launchURL(model['linkUrl']);
                             // launchInWebViewWithJavaScript(model['fileUrl']);
                             // Navigator.push(
                             //   context,

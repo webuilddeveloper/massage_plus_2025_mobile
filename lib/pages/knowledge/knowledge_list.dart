@@ -71,7 +71,6 @@ class _KnowledgeList extends State<KnowledgeList> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      // appBar: header(context, goBack, title: 'คลังความรู้', rightButton: null),
       appBar: AppBar(
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),

@@ -682,6 +682,7 @@ textFormIdCardFieldEdit(
 }
 
 dropdownSelect(
+  BuildContext context, // เพิ่ม context เพื่อนำไปใช้ใน MediaQuery
   String? selectedItem,
   Function(String?)? onChanged,
   String hintText,
@@ -694,6 +695,7 @@ dropdownSelect(
       fillColor: enabled ? Color(0xFFC5DAFC) : Color(0xFF707070),
       contentPadding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 12.0),
       hintText: hintText,
+      isDense: true,
       border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(10.0),
         borderSide: BorderSide.none,
@@ -702,14 +704,21 @@ dropdownSelect(
     value: selectedItem,
     onChanged: enabled
         ? (String? newValue) {
-            // เรียกใช้ setState ภายในฟังก์ชัน onChanged
             onChanged?.call(newValue);
           }
         : null,
     items: items.map((Map<String, String> item) {
       return DropdownMenuItem<String>(
         value: item['id'],
-        child: Text(item['name']!),
+        child: SizedBox(
+          width: MediaQuery.of(context).size.width * 0.8,
+          child: Text(
+            item['name']!,
+            overflow: TextOverflow.ellipsis,
+            softWrap: false,
+            maxLines: 2,
+          ),
+        ),
       );
     }).toList(),
   );

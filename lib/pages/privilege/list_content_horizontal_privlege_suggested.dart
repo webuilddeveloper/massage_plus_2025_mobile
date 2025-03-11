@@ -69,12 +69,7 @@ class _ListContentHorizontalPrivilegeSuggested
                   child: Text(
                     'ดูทั้งหมด',
                     style: TextStyle(fontSize: 12.0, fontFamily: 'Sarabun'),
-                  )
-                  // Image.asset(
-                  //   'assets/images/double_arrow_right.png',
-                  //   height: 15.0,
-                  // )
-                  ),
+                  )),
             ),
           ],
         ),
@@ -97,10 +92,8 @@ class _ListContentHorizontalPrivilegeSuggested
 renderCard(String title, String url, Future<dynamic> model, String urlComment,
     Function navigationForm) {
   return FutureBuilder<dynamic>(
-    future: model, // function where you call your api
+    future: model,
     builder: (BuildContext context, AsyncSnapshot<dynamic> snapshot) {
-      // AsyncSnapshot<Your object type>
-
       if (snapshot.hasData) {
         return ListView.builder(
           scrollDirection: Axis.horizontal,
@@ -110,8 +103,6 @@ renderCard(String title, String url, Future<dynamic> model, String urlComment,
                 context, navigationForm);
           },
         );
-        // } else if (snapshot.hasError) {
-        //   return Center(child: Text('Error: ${snapshot.error}'));
       } else {
         return ListView.builder(
           scrollDirection: Axis.horizontal,
@@ -151,7 +142,7 @@ myCard(int index, int lastIndex, dynamic model, BuildContext context,
                   Container(
                     height: 45,
                     decoration: BoxDecoration(
-                      color: Color(0xFFFF7514),
+                      color: Theme.of(context).primaryColor,
                       borderRadius: new BorderRadius.only(
                         topLeft: const Radius.circular(5.0),
                         topRight: const Radius.circular(5.0),

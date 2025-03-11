@@ -36,7 +36,7 @@ class _NewsList extends State<NewsList> {
     news = new NewsListVertical(
       site: "DDPM",
       model: postDio(
-          '${newsApi}read', {'skip': 0, 'limit': _limit, 'app': 'security'}),
+          '${newsApi}read', {'skip': 0, 'limit': _limit, 'app': 'massage'}),
       url: '${service.newsApi}read',
       urlComment: '${service.newsCommentApi}read',
       urlGallery: '${service.newsGalleryApi}',
@@ -60,7 +60,7 @@ class _NewsList extends State<NewsList> {
           'limit': _limit,
           "keySearch": keySearch,
           // 'category': category,
-          'app': 'security',
+          'app': 'massage',
         }),
         url: '${service.newsApi}read',
         urlGallery: '${service.newsGalleryApi}',
@@ -143,7 +143,7 @@ class _NewsList extends State<NewsList> {
                           'skip': 0,
                           'limit': _limit,
                           // "category": category,
-                          'app': 'security',
+                          'app': 'massage',
                           "keySearch": keySearch
                         }),
                         url: '${service.newsApi}read',
@@ -170,7 +170,7 @@ class _NewsList extends State<NewsList> {
                           'skip': 0,
                           'limit': _limit,
                           "keySearch": keySearch,
-                          'app': 'security'
+                          'app': 'massage'
                           // 'category': category
                         }),
                         url: '${service.newsApi}read',

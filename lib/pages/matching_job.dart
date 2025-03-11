@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:security_2025_mobile_v3/pages/matching_job_detai.dart';
+import 'package:massage_2025_mobile/pages/matching_job_detai.dart';
 
 class MatchingJob extends StatefulWidget {
   const MatchingJob({super.key});
@@ -17,52 +17,50 @@ class _MatchingJobState extends State<MatchingJob> {
     {
       "id": 1,
       "imgUrl":
-          "https://www.jobbkk.com/upload/employer/00/280/031280/images/201344.webp",
-      "url":
-          "https://www.jobbkk.com/jobs/detail/201344/1096884?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
-      "title": "บริษัท รักษาความปลอดภัย ท่าอากาศยานไทย จำกัด ",
-      "company": "ABC Security Co., Ltd.",
+          "https://img.wongnai.com/p/1920x0/2018/06/30/f73e248f9f9647938f00c183508ca277.jpg",
+      "title": "หมอนวดแผนไทย",
+      "company": "ร้านนวดไทยดี",
       "location": "กรุงเทพฯ",
-      "salary": "11,000 - 16,500 บาท/เดือน",
-      "working_hours": "07.00 -15.00 น. / 15.00 - 23.00 น.",
+      "salary": "12,000 - 18,000 บาท/เดือน",
+      "working_hours": "10.00 - 20.00 น.",
       "isUrgent": true,
       "postedDate": "1 วันที่แล้ว",
       "qualifications": [
         "เพศชาย/หญิง อายุ 20-50 ปี",
-        "วุฒิการศึกษา ม.3 ขึ้นไป",
-        "สุขภาพแข็งแรง ไม่มีโรคประจำตัวร้ายแรง",
-        "ไม่มีประวัติอาชญากรรมและไม่ยุ่งเกี่ยวกับยาเสพติด",
-        "มีความรับผิดชอบ ตรงต่อเวลา และทำงานเป็นทีมได้",
-        "หากมีใบอนุญาต รปภ. จะพิจารณาเป็นพิเศษ"
+        "มีใบประกอบวิชาชีพนวดแผนไทย (จากกรมพัฒนาฝีมือแรงงานหรือกระทรวงสาธารณสุข)",
+        "มีประสบการณ์นวดอย่างน้อย 1 ปี",
+        "สุขภาพแข็งแรง ไม่มีโรคติดต่อร้ายแรง",
+        "สามารถทำงานเป็นกะ และทำงานล่วงเวลาได้",
+        "มีมนุษยสัมพันธ์ดี และให้บริการลูกค้าอย่างสุภาพ"
       ],
       "contact": {
-        "email": "hr@abcsecurity.com",
-        "phone": "090-123-4567",
-        "address": "ถนนสุขุมวิท 50, กรุงเทพฯ"
+        "email": "hr@massage-thai.com",
+        "phone": "092-345-6789",
+        "address": "ถนนสุขุมวิท 22, กรุงเทพฯ"
       }
     },
     {
       "id": 2,
       "imgUrl":
-          "https://static.vecteezy.com/system/resources/previews/008/214/517/non_2x/abstract-geometric-logo-or-infinity-line-logo-for-your-company-free-vector.jpg",
-      "title": "พนักงานขาย (Sales Representative)",
-      "company": "XYZ Trading Co., Ltd.",
+          "https://thethaiger.com/th/wp-content/uploads/2023/04/%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%99%E0%B8%A7%E0%B8%94-diora.jpg",
+      "title": "หมอนวดสปา",
+      "company": "Wellness Spa Chiang Mai",
       "location": "เชียงใหม่",
-      "salary": "15,000 - 25,000 บาท/เดือน",
-      "working_hours": "09.00 - 18.00 น.",
+      "salary": "15,000 - 22,000 บาท/เดือน + ค่าทิป",
+      "working_hours": "09.00 - 19.00 น.",
       "isUrgent": false,
       "postedDate": "3 วันที่แล้ว",
       "qualifications": [
-        "เพศชาย/หญิง อายุ 22-35 ปี",
-        "วุฒิการศึกษา ปวส. หรือ ปริญญาตรี สาขาการตลาด หรือที่เกี่ยวข้อง",
-        "มีประสบการณ์ด้านการขายอย่างน้อย 1 ปี",
-        "สามารถใช้คอมพิวเตอร์พื้นฐาน และโปรแกรม Microsoft Office ได้",
-        "มีความสามารถในการสื่อสาร และเจรจาต่อรองได้ดี",
-        "สามารถเดินทางไปพบลูกค้าในพื้นที่ต่าง ๆ ได้"
+        "เพศหญิง อายุ 22-45 ปี",
+        "มีใบประกอบวิชาชีพนวดสปา หรือได้รับการฝึกอบรมจากสถาบันที่ได้รับการรับรอง",
+        "มีประสบการณ์นวดน้ำมัน นวดอโรม่า หรือนวดหินร้อน อย่างน้อย 6 เดือน",
+        "รักงานบริการ มีความอดทน และสามารถทำงานร่วมกับทีมได้",
+        "สามารถสื่อสารภาษาอังกฤษเบื้องต้นได้ จะพิจารณาเป็นพิเศษ",
+        "สามารถทำงานในวันหยุดนักขัตฤกษ์ได้"
       ],
       "contact": {
-        "email": "recruit@xyztrading.com",
-        "phone": "081-234-5678",
+        "email": "recruit@wellnessspa.com",
+        "phone": "080-567-1234",
         "address": "ถนนนิมมานเหมินท์, เชียงใหม่"
       }
     },
@@ -89,16 +87,6 @@ class _MatchingJobState extends State<MatchingJob> {
       itemsToShow = 10;
     });
   }
-
-  // void loadMore() {
-  //   setState(() {
-  //     if (itemsToShow + 10 <= filteredData.length) {
-  //       itemsToShow += 10;
-  //     } else {
-  //       itemsToShow = filteredData.length;
-  //     }
-  //   });
-  // }
 
   @override
   Widget build(BuildContext context) {

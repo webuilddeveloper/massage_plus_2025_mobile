@@ -56,36 +56,25 @@ class _SecurityLicenseState extends State<SecurityLicense>
   List<Map<String, String>> allData = [
     {
       "id": "001",
-      "name": "สมชาย ใจดี",
-      "image": 'assets/รปภ1.jpg',
-      "company": "บริษัท เอ บี ซี จำกัด",
-      "license_number": "1234567890",
+      "name": "นายสมทรง นวดดี",
+      "image": 'assets/police_bank.jpg',
+      "company": "ร้านนวดแผนไทย ผ่อนคลาย",
+      "license_number": "MT123456789",
       "blood_type": "O",
       "issue_date": "2023-01-15",
       "expiry_date": "2028-01-15",
-      "position": "พนักงานรักษาความปลอดภัย"
+      "position": "หมอนวดแผนไทย"
     },
     {
       "id": "002",
-      "name": "นายสมทุย ลุยสวน ",
-      "image": "assets/รปภ2.jpg",
-      "company": "บริษัท ดี อี เอฟ จำกัด",
-      "license_number": "9876543210",
+      "name": "นายสมหมาย ผ่อนคลาย",
+      "image": "assets/police_max.jpg",
+      "company": "ร้านสปาสุขใจ",
+      "license_number": "MT987654321",
       "blood_type": "A",
       "issue_date": "2022-06-10",
       "expiry_date": "2027-06-10",
-      "position": "พนักงานรักษาความปลอดภัย"
-    },
-    {
-      "id": "003",
-      "name": "นายแดง เขียว ",
-      "image": "assets/รปภ3.jpg",
-      "company": "บริษัท ดี อี เอฟ จำกัด",
-      "license_number": "6543123",
-      "blood_type": "A",
-      "issue_date": "2022-06-10",
-      "expiry_date": "2027-06-10",
-      "position": "พนักงานรักษาความปลอดภัย"
+      "position": "หมอนวดแผนไทย"
     },
   ];
 
@@ -139,7 +128,7 @@ class _SecurityLicenseState extends State<SecurityLicense>
               decoration: InputDecoration(
                 filled: true,
                 fillColor: Colors.white.withOpacity(0.2),
-                hintText: 'ค้นหาจากชื่อ, บริษัท หรือเลขใบอนุญาต',
+                hintText: 'ค้นหาจากชื่อ หรือเลขใบอนุญาต',
                 hintStyle: TextStyle(color: Colors.white70),
                 prefixIcon: Icon(Icons.search, color: Colors.white),
                 border: OutlineInputBorder(
@@ -177,7 +166,7 @@ class _SecurityLicenseState extends State<SecurityLicense>
                                   vertical: 10, horizontal: 20),
                               decoration: BoxDecoration(
                                 image: DecorationImage(
-                                  image: AssetImage("assets/bg_header.png"),
+                                  image: AssetImage("assets/bg_login.png"),
                                   fit: BoxFit.fill,
                                 ),
                                 borderRadius: BorderRadius.circular(15),
@@ -187,26 +176,6 @@ class _SecurityLicenseState extends State<SecurityLicense>
                                 children: [
                                   Row(
                                     children: [
-                                      // Container(
-                                      //   height: 85,
-                                      //   width: 85,
-                                      //   padding: EdgeInsets.only(right: 10),
-                                      //   child: item["image"] != ''
-                                      //       ? CircleAvatar(
-                                      //           backgroundColor:
-                                      //               Colors.transparent,
-                                      //           backgroundImage: NetworkImage(
-                                      //               item["image"]!),
-                                      //         )
-                                      //       : Container(
-                                      //           padding: EdgeInsets.all(10.0),
-                                      //           child: Image.asset(
-                                      //             'assets/images/user_not_found.png',
-                                      //             color: Theme.of(context)
-                                      //                 .primaryColorLight,
-                                      //           ),
-                                      //         ),
-                                      // ),
                                       Container(
                                         height: 85,
                                         width: 85,

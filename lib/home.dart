@@ -1,5 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/services.dart';
+import 'package:massage_2025_mobile/pages/check_security_license.dart';
+import 'package:massage_2025_mobile/pages/qa_screen.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:massage_2025_mobile/component/coming_soon.dart';
 import 'package:massage_2025_mobile/pages/Complaint.dart';
@@ -941,7 +943,6 @@ class _HomePageState extends State<HomePage> {
                   );
                 },
               ),
-
               _buildServiceIcon(
                 path: 'assets/icons/service_6.png',
                 title: 'ตรวจสอบ\nใบอรับรอง',
@@ -949,24 +950,12 @@ class _HomePageState extends State<HomePage> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      // builder: (context) => SecurityLicense(),
-                      builder: (context) => VerifyStangPage(),
+                      builder: (context) => SecurityLicense(),
+                      // builder: (context) => VerifyStangPage(),
                     ),
                   );
                 },
               ),
-              // _buildServiceIcon(
-              //   path: 'assets/icons/service_4.png',
-              //   title: 'หลักสูตร\nอบรม',
-              //   callBack: () {
-              //     Navigator.push(
-              //       context,
-              //       MaterialPageRoute(
-              //         builder: (context) => TrainingCourses(),
-              //       ),
-              //     );
-              //   },
-              // ),
             ],
           ),
           SizedBox(height: 15),
@@ -1005,10 +994,7 @@ class _HomePageState extends State<HomePage> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => ComingSoon(
-                        code: '',
-                        title: '',
-                      ),
+                      builder: (context) => QAScreen(),
                     ),
                   );
                 },
@@ -1079,40 +1065,39 @@ class _HomePageState extends State<HomePage> {
   }
 
   _buildNews() {
-    return Container(
-      // padding: const EdgeInsets.symmetric(horizontal: 20.0),
-      alignment: Alignment.centerLeft,
-      color: Colors.transparent,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              const Text(
-                'ข่าวประชาสัมพันธ์',
-                style: TextStyle(
-                  fontSize: 16.0,
-                  fontFamily: 'Kanit',
-                  fontWeight: FontWeight.w400,
+    return Padding(
+      padding: const EdgeInsets.only(right: 20, left: 30, bottom: 60),
+      child: Container(
+        alignment: Alignment.centerLeft,
+        color: Colors.transparent,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                const Text(
+                  'ข่าวประชาสัมพันธ์',
+                  style: TextStyle(
+                    fontSize: 16.0,
+                    fontFamily: 'Kanit',
+                    fontWeight: FontWeight.w400,
+                  ),
                 ),
-              ),
-              InkWell(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => NewsList(
-                        title: 'ข่าวประชาสัมพันธ์',
+                InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => NewsList(
+                          title: 'ข่าวประชาสัมพันธ์',
+                        ),
                       ),
-                    ),
-                  );
-                },
-                child: Container(
-                  // padding: EdgeInsets.symmetric(ho: 10.0),
-                  // margin: EdgeInsets.only(bottom: 5.0, top: 10.0),
+                    );
+                  },
                   child: const Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Text(
                         'ดูทั้งหมด',
@@ -1121,7 +1106,6 @@ class _HomePageState extends State<HomePage> {
                           fontFamily: 'Kanit',
                           fontWeight: FontWeight.w400,
                           color: Color(0XFF27544F),
-                          // decoration: TextDecoration.underline,
                         ),
                       ),
                       Icon(
@@ -1132,25 +1116,20 @@ class _HomePageState extends State<HomePage> {
                     ],
                   ),
                 ),
-              ),
-            ],
-          ),
-          const SizedBox(
-            height: 10,
-          ),
-          FutureBuilder<dynamic>(
-            future: _futureNews,
-            builder: (BuildContext context, AsyncSnapshot<dynamic> snapshot) {
-              if (snapshot.hasData) {
-                print("กำลังรับข้อมูลจาก FutureBuilder");
-                // ลบเงื่อนไขการเช็ค _newsList.isEmpty เพื่อให้ข้อมูลอัพเดทเสมอ
-                if (snapshot.data != null && snapshot.data.length > 0) {
-                  _newsList = snapshot.data;
-                  print("รับข้อมูล ${_newsList.length} รายการ");
-                }
-                return Center(
-                  child: GridView.builder(
+              ],
+            ),
+            const SizedBox(height: 15), // ลดระยะห่าง
+            FutureBuilder<dynamic>(
+              future: _futureNews,
+              builder: (BuildContext context, AsyncSnapshot<dynamic> snapshot) {
+                if (snapshot.hasData) {
+                  if (snapshot.data != null && snapshot.data.length > 0) {
+                    _newsList = snapshot.data;
+                  }
+
+                  return GridView.builder(
                     shrinkWrap: true,
+                    padding: EdgeInsets.zero, // ปิด padding เพื่อให้ชิดขอบบนสุด
                     physics: const NeverScrollableScrollPhysics(),
                     gridDelegate:
                         const SliverGridDelegateWithFixedCrossAxisCount(
@@ -1199,10 +1178,8 @@ class _HomePageState extends State<HomePage> {
                                     topRight: Radius.circular(14),
                                   ),
                                   child: Container(
+                                    width: double.infinity,
                                     decoration: BoxDecoration(
-                                      borderRadius: const BorderRadius.vertical(
-                                        top: Radius.circular(14),
-                                      ),
                                       color: Colors.white,
                                       boxShadow: [
                                         BoxShadow(
@@ -1213,46 +1190,33 @@ class _HomePageState extends State<HomePage> {
                                         ),
                                       ],
                                     ),
-                                    width: double.infinity,
-                                    child: ClipRRect(
-                                      borderRadius: const BorderRadius.vertical(
-                                        top: Radius.circular(14),
-                                      ),
-                                      child: data['imageUrl'] != null &&
-                                              data['imageUrl']
-                                                  .toString()
-                                                  .isNotEmpty
-                                          ? Image.network(
-                                              data['imageUrl'],
-                                              fit: BoxFit.cover,
-                                              width: double.infinity,
-                                              height: double.infinity,
-                                              errorBuilder: (context, error,
-                                                      stackTrace) =>
-                                                  const Icon(
-                                                Icons.broken_image,
-                                                size: 50,
-                                                color: Colors.grey,
-                                              ),
-                                            )
-                                          : BlankLoading(
-                                              height: double.infinity,
-                                              width: double.infinity,
+                                    child: data['imageUrl'] != null &&
+                                            data['imageUrl']
+                                                .toString()
+                                                .isNotEmpty
+                                        ? Image.network(
+                                            data['imageUrl'],
+                                            fit: BoxFit.cover,
+                                            width: double.infinity,
+                                            height: double.infinity,
+                                            errorBuilder:
+                                                (context, error, stackTrace) =>
+                                                    const Icon(
+                                              Icons.broken_image,
+                                              size: 50,
+                                              color: Colors.grey,
                                             ),
-                                    ),
+                                          )
+                                        : BlankLoading(
+                                            height: double.infinity,
+                                            width: double.infinity,
+                                          ),
                                   ),
                                 ),
                               ),
                               Expanded(
                                 flex: 1,
                                 child: Container(
-                                  decoration: const BoxDecoration(
-                                    borderRadius: BorderRadius.only(
-                                      bottomLeft: Radius.circular(14),
-                                      bottomRight: Radius.circular(14),
-                                    ),
-                                    color: Color(0xFFFFFFFF),
-                                  ),
                                   padding: const EdgeInsets.all(5.0),
                                   alignment: Alignment.centerLeft,
                                   child: Text(
@@ -1272,28 +1236,28 @@ class _HomePageState extends State<HomePage> {
                         ),
                       );
                     },
-                  ),
-                );
-              } else if (snapshot.hasError) {
-                return BlankLoading(
-                  width: null,
-                  height: null,
-                );
-              } else {
-                return const Center(
-                  child: Text(
-                    'ไม่พบข้อมูล',
-                    style: TextStyle(
-                      fontSize: 20.0,
-                      fontFamily: 'Kanit',
-                      fontWeight: FontWeight.w600,
+                  );
+                } else if (snapshot.hasError) {
+                  return BlankLoading(
+                    width: null,
+                    height: null,
+                  );
+                } else {
+                  return const Center(
+                    child: Text(
+                      'ไม่พบข้อมูล',
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        fontFamily: 'Kanit',
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
-                  ),
-                );
-              }
-            },
-          ),
-        ],
+                  );
+                }
+              },
+            ),
+          ],
+        ),
       ),
     );
   }

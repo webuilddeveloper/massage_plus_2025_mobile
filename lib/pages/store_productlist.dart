@@ -14,57 +14,30 @@ class _ProductListState extends State<ProductList> {
   final List<Map<String, dynamic>> products = [
     {
       "id": 1,
-      "name": "เครื่องแบบ รปภ.",
-      "price": 850,
-      "stock": 20,
-      "image": "https://inwfile.com/s-cb/07wdrt.jpg",
-      "description": "ชุดเครื่องแบบ รปภ. มาตรฐาน",
+      "name": "น้ำมันนวดสมุนไพร",
+      "price": 150,
+      "stock": 30,
+      "image":
+          "https://media.allonline.7eleven.co.th/pdmain/541548-00-sukaya.jpg",
+      "description": "น้ำมันนวดสมุนไพร สูตรผ่อนคลาย ใช้สำหรับนวดแผนไทยและสปา"
     },
     {
       "id": 2,
-      "name": "หมวก รปภ.",
-      "price": 250,
-      "stock": 50,
-      "image":
-          "https://th-test-11.slatic.net/p/8db92ea875073d530cc9818eb123205f.jpg",
-      "description": "หมวกเครื่องแบบ รปภ. สีดำ พร้อมตราสัญลักษณ์"
-    },
-    {
-      "id": 3,
-      "name": "รองเท้า รปภ.",
-      "price": 1200,
-      "stock": 15,
-      "image":
-          "https://down-th.img.susercontent.com/file/th-11134207-7r98u-lsjimlgd6p2m79",
-      "description": "รองเท้าหนังหุ้มส้น กันลื่น เหมาะสำหรับงานรักษาความปลอดภัย"
-    },
-    {
-      "id": 4,
-      "name": "กระบองไฟจราจร",
-      "price": 450,
-      "stock": 30,
-      "image":
-          "https://www.jenstore.com/uploads/product/t/r/traffic-baton-g071300007_ogn0pnggdudphtvd.jpg",
-      "description": "กระบองไฟจราจร สีแดง สว่างชัดเจน ใช้ในเวลากลางคืน"
-    },
-    {
-      "id": 5,
-      "name": "วิทยุสื่อสาร",
+      "name": "เตียงนวดพกพา",
       "price": 3200,
       "stock": 10,
       "image":
-          "https://spenderclub.com/wp-content/uploads/2024/12/8910893-D2452_Cover.jpg",
-      "description": "วิทยุสื่อสารสำหรับเจ้าหน้าที่ รปภ. เชื่อมต่อระยะไกล"
+          "https://i5.walmartimages.com/seo/BestMassage-Massage-Table-Portable-Massage-Bed-Spa-Bed-84-Inches-Long-28-Inchs-Wide-Hight-Adjustable-2-Folding-W-Carry-Case-Black_33315652-970c-45d7-a77c-74ca34895b53.b205e076b90f15371e0714d72eec4b30.jpeg",
+      "description": "เตียงนวดพับได้ น้ำหนักเบา เหมาะสำหรับหมอนวดที่ต้องเดินทาง"
     },
     {
-      "id": 6,
-      "name": "เสื้อสะท้อนแสง",
-      "price": 300,
-      "stock": 40,
-      "image":
-          "https://down-th.img.susercontent.com/file/9a1bbbd9a906dfa655878e4d462d5714",
-      "description": "เสื้อสะท้อนแสงสำหรับงานกลางคืน เพิ่มความปลอดภัย"
-    }
+      "id": 3,
+      "name": "สมุนไพรลูกประคบ",
+      "price": 250,
+      "stock": 50,
+      "image": "https://inwfile.com/s-cw/y7m4ms.jpg",
+      "description": "ลูกประคบสมุนไพรแท้ บรรเทาอาการปวดเมื่อย ฟื้นฟูร่างกาย"
+    },
   ];
 
   void addToCart(Map<String, dynamic> product, int quantity) {
